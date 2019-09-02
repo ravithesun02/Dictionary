@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: WHITE;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label layoutX="166.0" layoutY="31.0" prefHeight="77.0" prefWidth="263.0" text="Dictionary" textAlignment="CENTER" textFill="#d32626">
+         <font>
+            <Font name="Fira Sans Compressed ExtraBold" size="62.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="button" buttonType="RAISED" layoutX="164.0" layoutY="275.0" onMouseClicked="#chooseFile" prefHeight="50.0" prefWidth="272.0" ripplerFill="#cf5611" style="-fx-background-color: BLACK;" text="Choose the File" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="label" layoutX="6.0" layoutY="192.0" prefHeight="39.0" prefWidth="585.0" text="                                *.txt file only" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fill="WHITE" iconName="UPLOAD" layoutX="182.0" layoutY="308.0" onMouseClicked="#chooseFile" size="25" />
+      <JFXButton fx:id="btn" buttonType="RAISED" layoutX="164.0" layoutY="493.0" onMouseClicked="#searchData" prefHeight="50.0" prefWidth="272.0" ripplerFill="#cf5611" style="-fx-background-color: BLACK;" text="Search" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <TextField fx:id="search" layoutX="161.0" layoutY="413.0" prefHeight="39.0" prefWidth="272.0" promptText="ENTER THE WORD">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </TextField>
+      <Label layoutX="538.0" layoutY="570.0" text="\@Ravi" />
+   </children>
+</AnchorPane>
